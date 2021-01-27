@@ -14,8 +14,8 @@ Instructions based on Getting Started section of : https://doc.laravue.dev/guide
 Setup Git
 
 Clone the project with composer
-```composer create-project tuandm/laravue
-cd laravue```
+```composer create-project tuandm/laravue```
+```cd laravue```
 
 Change permissions
 ```sudo chmod -R a+rw ~/public_html/laravue/```
