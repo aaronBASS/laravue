@@ -11,6 +11,12 @@ Instructions based on Getting Started section of: https://doc.laravue.dev/guide/
 
 ## Create laraval project with composer
 
+Update && Upgrade
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+
 Create project directory
 ```
 sudo mkdir ~/public_html/laravue/
@@ -18,19 +24,19 @@ sudo chmod -R a+rw ~/public_html/laravue/
 cd ~/public_html/laravue/
 ```
 
-Setup `Git`
+Configure `Git`
 
 Clone the project with composer
 ```
-composer create-project tuandm/laravue
+sudo composer create-project tuandm/laravue
 cd laravue
 ```
 
 Configure database
 ```
 sudo apt install mariadb-server
-
 sudo mysql_secure_installation
+sudo apt-get update
 ```
 
 Enter current password for root (enter for none): `ENTER`
