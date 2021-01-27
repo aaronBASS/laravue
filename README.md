@@ -11,17 +11,14 @@ Instructions based on Getting Started section of: https://doc.laravue.dev/guide/
 
 ## Create laraval project with composer
 
-Create directory
+Create project directory
 ```
 sudo mkdir ~/public_html/laravue/
-```
-
-Setup Git
-
-Change permissions
-```
 sudo chmod -R a+rw ~/public_html/laravue/
+cd ~/public_html/laravue/
 ```
+
+Setup `Git`
 
 Clone the project with composer
 ```
