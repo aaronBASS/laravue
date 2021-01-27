@@ -1,27 +1,32 @@
-Instructions based on Getting Started section of : https://doc.laravue.dev/guide/#project-structure
+Instructions based on Getting Started section of: https://doc.laravue.dev/guide/#project-structure
 
 
-### Prerequists
+## Prerequists
 
 - Laraval 8 requirements [Laravel:Docs](https://laravel.com/docs/8.x/installation)
 - Composer
 - Git
 
-## Installation
+# Installation
 
-#### Create laraval project with composer
+## Create laraval project with composer
+
+Create directory
+```
+sudo mkdir ~/public_html/laravue/
+```
 
 Setup Git
+
+Change permissions
+```
+sudo chmod -R a+rw ~/public_html/laravue/
+```
 
 Clone the project with composer
 ```
 composer create-project tuandm/laravue
 cd laravue
-```
-
-Change permissions
-```
-sudo chmod -R a+rw ~/public_html/laravue/
 ```
 
 Configure database
