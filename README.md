@@ -11,7 +11,7 @@ Instructions based on Getting Started section of: https://doc.laravue.dev/guide/
 
 ## Create laraval project with composer
 
-Update && Upgrade
+Update & Upgrade
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -29,6 +29,7 @@ Configure `Git`
 Clone the project with composer
 ```
 sudo composer create-project tuandm/laravue
+sudo chmod -R a+rw ~/public_html/laravue/
 cd laravue
 ```
 
