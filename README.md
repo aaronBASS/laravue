@@ -88,12 +88,21 @@ composer install
 
 Migration and DB seeder (after changing your DB settings in .env)
 ```
+sudo apt-get install php7.4-mysql
 php artisan migrate --seed
 ```
+
+Install dependency
+npm install
 
 Build for development
 ```
 sudo npm run dev # or sudo npm run watch
+```
+
+Generate php aritisan key
+```
+php artisan key:generate
 ```
 
 Start local development server
