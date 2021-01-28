@@ -26,10 +26,21 @@ cd ~/public_html/laravue/
 
 Configure `Git`
 
+Add to gitconfig file:
+```
+[user]
+	name = username
+	email = your@email.com
+```
+
+
 Clone the project with composer
 ```
 sudo composer create-project tuandm/laravue
-sudo chmod -R a+rw ~/public_html/laravue/
+sudo chown -R www-data:www-data ~/public_html/laravue/
+sudo usermod -a -G www-data username
+sudo find ~/public_html/laravue/ -type f -exec chmod 644 {} \;
+sudo find ~/public_html/laravue/ -type d -exec chmod 755 {} \;
 cd laravue
 ```
 
@@ -59,7 +70,7 @@ EXIT;
 
 Configure the .env file
 ```
-sudo nano ~/public_html/blog/.env
+sudo nano ~/public_html/laravue/.env
 ```
 
 Database connection configuration
@@ -67,6 +78,12 @@ Database connection configuration
 DB_DATABASE=blog
 DB_USERNAME=userblog
 DB_PASSWORD=passblog
+```
+Go to laravel project directory and install
+```
+cd ~/public_html/laravue/
+sudo apt-get install php-mbstring php-dom
+composer install 
 ```
 
 Migration and DB seeder (after changing your DB settings in .env)
