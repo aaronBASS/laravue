@@ -50,9 +50,9 @@ Reload privilege tables now? [Y/n] `y`
 ```sudo mysql -u root -p```
 
 ```
-CREATE DATABASE blog;
-CREATE USER 'userblog'@'localhost' IDENTIFIED BY 'passblog';
-GRANT ALL PRIVILEGES ON blog.* TO 'userblog'@'localhost';
+CREATE DATABASE laravue;
+CREATE USER 'larauser'@'localhost' IDENTIFIED BY 'larapass';
+GRANT ALL PRIVILEGES ON laravue.* TO 'larauser'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 ```
